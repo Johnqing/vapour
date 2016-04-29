@@ -1,9 +1,7 @@
-import angular from './angular';
-import ngAnimate from 'angular-animate';
+import angular from 'angularjs-ie8-build';
 import uiRouter from 'angular-ui-router';
-import sanitize from 'angular-sanitize';
 
-let VapourModule = angular.module('vapour', ['ngAnimate', 'ngSanitize', 'ui.router']);
+let VapourModule = angular.module('vapour', ['ui.router']);
 
 let extend = angular.extend;
 let forEach = angular.forEach;
