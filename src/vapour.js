@@ -1,8 +1,7 @@
 import angular from 'angularjs-ie8-build';
-import ngAnimate from 'angular-animate';
 import uiRouter from 'angular-ui-router';
 
-let VapourModule = angular.module('vapour', ['ngAnimate', 'ui.router']);
+let VapourModule = angular.module('vapour', ['ui.router']);
 
 let extend = angular.extend;
 let forEach = angular.forEach;
