@@ -1,4 +1,4 @@
-import angular from 'angularjs-ie8-build';
+import angular from './angular';
 import ngAnimate from 'angular-animate';
 import uiRouter from 'angular-ui-router';
 import sanitize from 'angular-sanitize';
