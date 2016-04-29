@@ -1,5 +1,4 @@
-import 'es6-promise';
-import angular from 'angular';
+import angular from 'angularjs-ie8-build';
 import ngAnimate from 'angular-animate';
 import uiRouter from 'angular-ui-router';
 import sanitize from 'angular-sanitize';
