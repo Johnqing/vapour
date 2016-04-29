@@ -10,9 +10,10 @@
             max-width: 250px;
         }
     </style>
-    <!--[if IE 8]><script
-        src="../build/ie8.js"
-        ></script><![endif]-->
+    <!--[if IE 8]>
+    <script src="../build/ie8.js"></script>
+    <script src="https://s.ssl.qhimg.com/static/23bf24ecd28427f9/1102.js"></script>
+    <![endif]-->
 </head>
 <body ng-app="myApp">
 <div ui-view></div>
@@ -22,17 +23,17 @@
         "use strict";
 
         var app = angular.module('myApp', ['vapour', 'myApp.controllers']);
-        var sendPostControllerTemplate ='<div class="panel" ng-repeat="item in products">' +
-                    '<div class="panel-hd">' +
-                    '{{item.name}}' +
-                    '</div>' +
-                    '<div class="panel-bd">' +
-                    '{{item.content}}' +
-                    '</div>' +
+        var sendPostControllerTemplate = '<div class="panel" ng-repeat="item in products">' +
+                '<div class="panel-hd">' +
+                '{{item.name}}' +
+                '</div>' +
+                '<div class="panel-bd">' +
+                '{{item.content}}' +
+                '</div>' +
                 '</div>';
 
         var controller = angular.module('myApp.controllers', []);
-        controller.controller('IndexCtrl', function($scope)  {
+        controller.controller('IndexCtrl', function ($scope) {
             $scope.products = [
                 {
                     name: '测试1',
