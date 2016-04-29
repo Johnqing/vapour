@@ -1,4 +1,4 @@
-build/
+
 dist/
 _drafts/
 _site/
@@ -16,3 +16,5 @@ agentx.json
 nohup.out
 agentx.json
 filemaps.json
+build/assets.json
+build/*.map
