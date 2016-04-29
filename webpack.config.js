@@ -94,7 +94,8 @@ module.exports = {
                 query: {
                     presets: ['es2015', 'es2015-loose'],
                     "plugins": [
-                        "add-module-exports"
+                        "add-module-exports",
+                        "transform-runtime"
                     ]
                 }
             },
