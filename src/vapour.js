@@ -1,3 +1,4 @@
+import 'es6-promise';
 import angular from 'angular';
 import ngAnimate from 'angular-animate';
 import uiRouter from 'angular-ui-router';
