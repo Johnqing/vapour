@@ -1,0 +1,46 @@
+{
+  "name": "vapour",
+  "version": "1.0.0",
+  "description": "ng framework",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "dependencies": {
+    "angular-ui-router": "^0.2.18",
+    "angularjs-ie8-build": "^1.4.7",
+    "babel-plugin-transform-runtime": "^6.7.5"
+  },
+  "devDependencies": {
+    "autoprefixer-loader": "^3.2.0",
+    "babel-core": "^6.7.7",
+    "babel-plugin-add-module-exports": "^0.1.4",
+    "babel-plugin-transform-runtime": "^6.7.5",
+    "eslint": "^2.8.0",
+    "eslint-loader": "^1.3.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "gulp": "^3.9.1",
+    "less-loader": "^2.2.3",
+    "ng-annotate-webpack-plugin": "^0.1.2",
+    "run-sequence": "^1.1.5",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Johnqing/vapour.git"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "author": "Charles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Johnqing/vapour/issues"
+  },
+  "homepage": "https://github.com/Johnqing/vapour#readme"
+}
