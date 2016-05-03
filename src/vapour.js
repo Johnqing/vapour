@@ -1,3 +1,5 @@
+import './directive/animate/animate';
+
 import angular from 'angularjs-ie8-build';
 import uiRouter from 'angular-ui-router';
 
