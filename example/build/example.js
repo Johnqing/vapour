@@ -40,12 +40,13 @@ app.controller('IndexCtrl', function ($scope) {
     }]
 });
 // config
+var indexTemp = document.getElementById('index').innerHTML;
 app.config(function ($stateProvider, $urlRouterProvider) {
 
     $stateProvider.state('index', {
         url: '/index',
         controller: 'IndexCtrl',
-        template: document.getElementById('index').innerHTML
+        template: indexTemp
     });
 
     $urlRouterProvider.otherwise('index');
