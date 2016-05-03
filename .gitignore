@@ -18,3 +18,4 @@ agentx.json
 filemaps.json
 build/assets.json
 build/*.map
+example/a.json

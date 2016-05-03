@@ -53,7 +53,6 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 
 app.directive('hcPieChart', function () {
     return {
-        restrict: 'E',
         template: '<div></div>',
         scope: {
             title: '@',
@@ -86,4 +85,4 @@ app.directive('hcPieChart', function () {
             });
         }
     };
-})
+});

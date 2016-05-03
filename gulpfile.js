@@ -2,6 +2,8 @@ var fs = require('fs');
 var path = require('path');
 var gulp = require('gulp');
 var sequence = require('run-sequence');
+var gulpNgDirective = require('gulp-ng-directive');
+var ngRevTemp = require('gulp-ng-replace-directive-template');
 
 var proStaticDir = path.join(__dirname, '/src');
 
@@ -12,6 +14,24 @@ var config = {
 
 var webpack = require("webpack");
 var webpackConfig = require("./webpack.config.js");
+
+gulp.task("ng:directive", function() {
+    gulp.src('example/src/*.js')
+        .pipe(gulpNgDirective({
+            outfile: 'example/a.json'
+        }))
+        .pipe(gulp.dest('example/build'))
+});
+
+gulp.task("ng:relace", function() {
+    var arr = require('./example/a.json');
+    gulp.src('example/src/*.html')
+        .pipe(ngRevTemp({
+            params: arr
+        }))
+        .pipe(gulp.dest('example/build'))
+});
+
 
 // 生产
 gulp.task("webpack:prod", function(callback) {
@@ -71,5 +91,11 @@ gulp.task("webpack:prod", function(callback) {
 gulp.task('prod', function (cb) {
     sequence(
         ['webpack:prod'],
+        cb)
+});
+gulp.task('example', function (cb) {
+    sequence(
+        ['ng:directive'],
+        ['ng:relace'],
         cb)
 });
