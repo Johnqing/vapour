@@ -4,7 +4,7 @@ export default function(jqLite){
      * @param cssClasses
      * @returns {*}
      */
-    jqLite.prototype.addClass = (cssClasses) => {
+    jqLite.prototype.addClass = function(cssClasses){
         var x, y, cssClass, el, splitClasses, existingClasses;
         if (cssClasses && cssClasses != 'ng-scope' && cssClasses != 'ng-isolate-scope') {
             for (x = 0; x < this.length; x++) {
@@ -36,7 +36,7 @@ export default function(jqLite){
      * @param cssClasses
      * @returns {*}
      */
-    jqLite.prototype.removeClass = (cssClasses) => {
+    jqLite.prototype.removeClass = function(cssClasses) {
         var x, y, splitClasses, cssClass, el;
         if (cssClasses) {
             for (x = 0; x < this.length; x++) {
