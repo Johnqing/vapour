@@ -2,8 +2,9 @@ import './directive/animate/animate';
 
 import angular from 'angularjs-ie8-build';
 import uiRouter from 'angular-ui-router';
+require('oclazyload');
 
-let VapourModule = angular.module('vapour', ['ui.router']);
+let VapourModule = angular.module('vapour', ['ui.router', 'oc.lazyLoad']);
 
 let extend = angular.extend;
 let forEach = angular.forEach;

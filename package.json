@@ -9,6 +9,7 @@
   "dependencies": {
     "angular-ui-router": "^0.2.18",
     "angularjs-ie8-build": "^1.4.7",
+    "oclazyload": "^1.0.9",
     "babel-plugin-transform-runtime": "^6.7.5"
   },
   "devDependencies": {
