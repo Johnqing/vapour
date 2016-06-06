@@ -6,6 +6,8 @@ require('oclazyload');
 
 let VapourModule = angular.module('vapour', ['ui.router', 'oc.lazyLoad']);
 
+window.vapour = VapourModule;
+
 let extend = angular.extend;
 let forEach = angular.forEach;
 let isDefined = angular.isDefined;
