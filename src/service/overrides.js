@@ -11,7 +11,7 @@ export default function(jqLite){
                 el = this[x];
                 if (el.setAttribute) {
 
-                    if (cssClasses.indexOf(' ') < 0 && el.classList.add) {
+                    if (cssClasses.indexOf(' ') < 0 && el.classList && el.classList.add) {
                         el.classList.add(cssClasses);
                     } else {
                         existingClasses = (' ' + (el.getAttribute('class') || '') + ' ')
@@ -42,7 +42,7 @@ export default function(jqLite){
             for (x = 0; x < this.length; x++) {
                 el = this[x];
                 if (el.getAttribute) {
-                    if (cssClasses.indexOf(' ') < 0 && el.classList.remove) {
+                    if (cssClasses.indexOf(' ') < 0 &&  el.classList && el.classList.remove) {
                         el.classList.remove(cssClasses);
                     } else {
                         splitClasses = cssClasses.split(' ');
